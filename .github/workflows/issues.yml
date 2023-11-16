@@ -1,0 +1,10 @@
+name: Lint Test and Deploy Workflow
+on:
+  issues:
+    types: opened
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Github Context Output
+        run: echo "${{toJSON(github)}}"
