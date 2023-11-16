@@ -1,7 +1,7 @@
 name: Lint Test and Deploy Workflow
 on:
   issues:
-    types: opened
+    types: [opened,closed,edited,reopened]
 jobs:
   info:
     runs-on: ubuntu-latest
